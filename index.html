@@ -79,15 +79,18 @@
 
   <!-- WebAR 3D Model -->
   <model-viewer src="model.glb"
-                ios-src="model.usdz"
-                ar
-                ar-modes="scene-viewer webxr quick-look"
-                camera-controls
-                tone-mapping="neutral"
-                auto-rotate
-                poster="poster.webp"
-                shadow-intensity="1"
-                style="width:100%; height:100vh;">
+              ios-src="model.usdz"
+              ar
+              ar-modes="scene-viewer webxr quick-look"
+              ar-scale="fixed"
+              disable-zoom
+              scale="0.3 0.3 0.3"
+              camera-controls
+              tone-mapping="neutral"
+              auto-rotate
+              poster="poster.webp"
+              shadow-intensity="1"
+              style="width:100%; height:100vh;">
     
     <!-- Loading progress -->
     <div class="progress-bar hide" slot="progress-bar">
